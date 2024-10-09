@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:torch_light/torch_light.dart';
-import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -145,15 +144,9 @@ class _homescreenState extends State<homescreen>
               SizedBox(
                 height: 20,
               ),
-              // Image.asset(
-              //   '1.jpg',
-              // ),
               Icon(
-                inOn
-                    ? Icons.wb_sunny
-                    : Icons
-                        .wb_sunny_outlined, // Use different icons based on condition
-                size: 100, // Set the icon size
+                inOn ? Icons.wb_sunny : Icons.wb_sunny_outlined,
+                size: 100,
                 color: inOn ? Color(0xFFFF8E01) : Color(0xFF504847),
               ),
               SizedBox(
@@ -262,8 +255,7 @@ class _ButtoncustomState extends State<Buttoncustom> {
           backgroundColor: widget.colour,
           foregroundColor: widget.textColor,
           shape: RoundedRectangleBorder(
-            borderRadius:
-                BorderRadius.circular(30.0), // Adjust the radius as needed
+            borderRadius: BorderRadius.circular(30.0),
           ),
         ),
         child: Center(
