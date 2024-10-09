@@ -123,10 +123,11 @@ class _homescreenState extends State<homescreen>
                   message,
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
-              )
+              ),
             ],
           );
-        });
+        }
+        );
   }
 
   Widget build(BuildContext context) {
@@ -185,7 +186,8 @@ class _homescreenState extends State<homescreen>
                             inOn = false;
                           else
                             inOn = true;
-                        });
+                        }
+                        );
                         torchlight();
                         _changeColor();
                       },
@@ -200,9 +202,9 @@ class _homescreenState extends State<homescreen>
                           foregroundColor:
                               inOn ? Color(0xFF504847) : Color(0xFFFF8E01)),
                     ),
-                  )
+                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),
